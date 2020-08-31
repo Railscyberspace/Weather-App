@@ -16,21 +16,67 @@
 
     <form action="" method="get" class="form-example">
         <div class="form-example">
-            <label for="FirstName" id="firstName" placeholder="FirstName" pattern max="10" min="3" required </label>
-                <input type="text" name="FirstName" id="FirstName" placeholder="FirstName" required />
+            <label for="FirstName" id="firstName" placeholder="FirstName"></label>
+            <input type="text" name="FirstName" id="FirstName" placeholder="FirstName" maxlength="10" minlength="3"
+                required />
         </div>
 
         <div>
-            <label for="LastName" id="LastName" placeholder="LastName" pattern max="10" min="3" required </label>
-                <input type="text" name="LastName" id="LastName" placeholder="LastName" required />
+            <label for="LastName" id="LastName" placeholder="LastName"></label>
+            <input type="text" name="LastName" id="LastName" placeholder="LastName" maxlength="10" minlength="3"
+                required />
         </div>
         <div class="form-example">
-            <label for="email" id="Email" placeholder="Email" </label>
-                <input type="email" name="email" id="email" required>
+            <label for="email" id="Email" placeholder="Email"></label>
+            <input type="Email" name="Email" id="Email" placeholder="Email" required>
+
+
+            <label for="Phone Number" id="Phone Number" placeholder="Phone Number"></label>
+            <input type="text" name="Phone Number" id="Phone Number" placeholder="Phone Number" maxlength="10"
+                minlength="3" required />
         </div>
-        <div class="form-example">
-            <input type="submit" value="Subscribe!">
         </div>
+
+
+        <label for="City" id="City" placeholder="City"></label>
+        <input type="text" name="City" id="City" placeholder="CIty" maxlength="10" minlength="3" required />
+
+        <label for="State" id="State" placeholder="State"></label>
+        <input type="text" name="State" id="State" placeholder="State" maxlength="10" minlength="3" required />
+
+
+        <div class="field">
+            <label>Location *</label>
+            <select id="location">
+                <option></option>
+                <optgroup label="United States 🇺🇸">
+                    <option>taxas </option>
+                    <option>Washinton DC</option>
+                    <option>New York </option>
+                </optgroup>
+
+                <optgroup label="Nigeria🇳🇬">
+                    <option>Lagos </option>
+                    <option>Abuja</option>
+                    <option>Calaber </option>
+                    <option>Kano </option>
+                    <option>Ibadan </option>
+                </optgroup>
+
+                <optgroup label="Ghana 🇬🇭">
+                    <option>Accura </option>
+                    <option>United Emirate🇦🇪</option>
+                    <option>Mexico 🇲🇽</option>
+                    <option>Australi 🇦🇺</option>
+                </optgroup>
+            </select>
+
+            <div class="PassWord">
+                <label for="PassWord" id="PassWord" placeholder="PassWord"></label>
+                <input type="text" name="PassWord" id="PassWord" placeholder="PassWord" maxlength="10" minlength="3"
+                    required />
+
+            </div>
     </form>
 
 </body>
