@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <"https: //api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&
+        exclude={part}&appid={https://home.openweathermap.org/api_keys}" />
+
+    <title>Weather.com</title>
+</head>
+
+<body>
+    <header>
+
+        </ul>
+        <ul class="header-website" onclick="toggleMenu(event)">
+
+
+            </li>
+            <li>
+                <form role="search" id="nav-search-form" action="/find" method="get">
+                    <input type="text" id="q" name="q" placeholder="Weather in your city">
+                    <input type="submit" style="display:none;">
+                </form>
+            </li>
+            <li>
+                <a href="/guide" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'weather']);">Get Started</a>
+            </li>
+            <li>
+                <a href="/price" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'price']);">Pricing</a>
+            </li>
+            <li>
+                <a href="/weathermap" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'weather']);">Maps</a>
+            </li>
+            <li>
+                <a href="/faq" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'weather']);">FAQ</a>
+            </li>
+            <li>
+                <a href="/examples" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'examples']);">Partners</a>
+            </li>
+            <li>
+                <a href="https://openweather.co.uk/blog/category/weather" target="_blank"
+                    onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'news']);">Blog</a>
+            </li>
+            <li>
+                <a href="https://home.openweathermap.org/marketplace" class="market-place"
+                    onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'marketplace']);"
+                    target="_blank">Marketplace</a>
+            </li>
+            <li class="user-sign-in">
+                <a href="sigup.html">Sign in</a>
+
+            </li>
+            <li class="support-item">
+                <a href="https://openweathermap.force.com/s/contactsupport" target="_blank">Support</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <h1>Current weather and forecasts collection</h1>
+
+
+
+
+    <h3>Our products</h3>
+
+    <h4>Current &amp; Forecast collection</h4>
+    <ul>
+
+        <li><a href="/current">Current weather for any geolocation</a></li>
+        <li><a href="/api/hourly-forecast">4-days/hourly weather forecast</a></li>
+        <li><a href="/forecast5">5-days/3 hour weather forecast</a></li>
+        <li><a href="/forecast16">16-days/daily weather forecast</a></li>
+    </ul>
+</body>
+
+</html>
