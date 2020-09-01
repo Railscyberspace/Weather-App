@@ -28,8 +28,8 @@
         </div>
         <div class="form-example">
             <label for="email" id="Email" placeholder="Email"></label>
-            <input type="Email" name="Email" id="Email" placeholder="Email" required>
-
+            <input type="Email" name="Email" id="Email" placeholder="Email" pattern=".+@globex.com" size="30"
+                required />
 
             <label for="Phone Number" id="Phone Number" placeholder="Phone Number"></label>
             <input type="text" name="Phone Number" id="Phone Number" placeholder="Phone Number" maxlength="10"
@@ -45,38 +45,46 @@
         <input type="text" name="State" id="State" placeholder="State" maxlength="10" minlength="3" required />
 
 
-        <div class="field">
-            <label>Location *</label>
-            <select id="location">
-                <option></option>
-                <optgroup label="United States 🇺🇸">
-                    <option>taxas </option>
-                    <option>Washinton DC</option>
-                    <option>New York </option>
-                </optgroup>
+        <div class="PassWord">
+            <label for="PassWord" id="PassWord" placeholder="PassWord"></label>
+            <input type="text" name="PassWord" id="PassWord" placeholder="PassWord" maxlength="10" minlength="3"
+                required />
 
-                <optgroup label="Nigeria🇳🇬">
-                    <option>Lagos </option>
-                    <option>Abuja</option>
-                    <option>Calaber </option>
-                    <option>Kano </option>
-                    <option>Ibadan </option>
-                </optgroup>
 
-                <optgroup label="Ghana 🇬🇭">
-                    <option>Accura </option>
-                    <option>United Emirate🇦🇪</option>
-                    <option>Mexico 🇲🇽</option>
-                    <option>Australi 🇦🇺</option>
-                </optgroup>
-            </select>
+            <br>
+            <button class="favorite styled" type="button">
+                Submit
+            </button><br>
+    </form>
 
-            <div class="PassWord">
-                <label for="PassWord" id="PassWord" placeholder="PassWord"></label>
-                <input type="text" name="PassWord" id="PassWord" placeholder="PassWord" maxlength="10" minlength="3"
-                    required />
+    <label for="select-Location"> Location* </label>
+    <select name="Country" id="select Location">
+        <option value="">--Please choose an option--</option>
 
-            </div>
+        <option></option>
+        <optgroup label="United States 🇺🇸">
+            <option>taxas </option>
+            <option>Washinton DC</option>
+            <option>New York </option>
+        </optgroup>
+
+        <optgroup label="Nigeria🇳🇬">
+            <option>Lagos </option>
+            <option>Abuja</option>
+            <option>Calaber </option>
+            <option>Kano </option>
+            <option>Ibadan </option>
+        </optgroup>
+
+        <optgroup label="Ghana 🇬🇭">
+            <option>Accura </option>
+            <option>United Emirate🇦🇪</option>
+            <option>Mexico 🇲🇽</option>
+            <option>Australi 🇦🇺</option>
+        </optgroup>
+    </select>
+
+    </div>
     </form>
 
 </body>
